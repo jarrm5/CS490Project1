@@ -9,10 +9,13 @@
 }
 
 /* HEAD STYLES */
+
+/*Upper head */
+
 div.top-header {
     position: relative;
     background-color: #F3F2F1;
-    height: 65px;
+    height: 60px;
 }
 
 div.top-header img{
@@ -30,7 +33,6 @@ div.top-header h2{
 }
 
 div.top-header div.search-pane{
-    height:60px;
     margin: 0 0 0 325px;
     line-height:60px;
 }
@@ -54,4 +56,33 @@ div.top-header div.search-pane input[type=submit]{
     border-radius: 0px 5px 5px 0px;
     border:1px solid #A6B0B6;
     border-left:none;
+}
+
+/* Lower head styles */
+
+div.bottom-header{
+    height: 60px;
+    border-bottom: 1px solid #A6B0B6; 
+}
+
+div.bottom-header h3{
+    line-height: 60px;
+    float:left;
+    margin: 0 0 0 15px;
+}
+
+div.bottom-header select{
+    width:8%;
+    height: 30px;
+    margin: 15px 0 0 8px;
+}
+div.bottom-header div.icons{
+    float:right;
+    height: 30px;
+    margin: 15px 15px 0 0;
+}
+
+div.bottom-header div.icons img{
+    height: 30px;
+    width: 30px;
 }
