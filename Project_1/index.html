@@ -4,6 +4,7 @@
         <title>Movie Search System</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
@@ -11,7 +12,7 @@
             <div class="top-header">
                 <img height ="100" width ="100" src ="images/movie.png">
                 <h2>RENT A MOVIE</h2>
-                <div id="search-pane">
+                <div class="search-pane">
                     <input type="search" value="Type something..">
                     <input type="submit" value="Search">
                 </div>
@@ -19,6 +20,10 @@
             <div class="bottom-header">
                 <div id="sort-pane">
                     <h3>Sort By:</h3>
+                    <select>
+                        <option value="yr">Year</option>
+                        <option value="rt">Rating</option>
+                    </select>
                     <img src="images/grid.jpg">
                     <img src="images/list.jpg">
                 </div>
