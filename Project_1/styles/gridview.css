@@ -1,0 +1,74 @@
+div.movie-container{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 2px solid lightgray;
+    padding:5px;
+}
+            
+div.movie-container img{
+    height: 200px;
+    width: 200px;
+}
+            
+div#hd{
+    position:absolute;
+    top: 15px;
+    left: 15px;
+}
+
+div#hd img{
+    height: 30px;
+    width: 40px;
+}
+
+div#basic-info{
+    position:absolute;
+    left: 5px;
+    bottom: 5px;
+    height:40px;
+    width:200px;
+    opacity:0.4;
+    background-color:black;
+    text-align: center;
+    margin-bottom:0px;
+    padding-top:0px;
+    transition: margin-bottom 2s, height 2s, padding-top 2s;
+}
+
+div#basic-info:hover{
+    height:70px;
+    margin-bottom:50px;
+    opacity:0.6;
+    padding-top: 10px;
+    transition: margin-bottom 2s, height 2s, line-height 2s, padding-top 2s, opacity 2s;
+}
+
+div#basic-info span, div#more-info span{
+    display:block;
+    color:white;
+    opacity:1;
+}
+
+div#more-info{
+    height:120px;
+    width:200px;
+}
+
+div#more-info{
+    position:absolute;
+    background-color:black;
+    opacity: 0.7;
+    bottom:5px;
+    left:5px;
+    height: 0px;
+}
+
+div#more-info span{
+    margin: 3px 6px;
+}
+
+div#more-info span#starring, div#basic-info span#title{
+    font-weight:bold;
+}
+
