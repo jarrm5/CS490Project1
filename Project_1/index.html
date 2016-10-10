@@ -8,6 +8,7 @@
         <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         <link rel="stylesheet" type="text/css" href="styles/gridview.css">
+        <link rel="stylesheet" type="text/css" href="styles/search.css">
         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="js_files/movies.js"></script>
@@ -22,11 +23,11 @@
                     <div id="basic-info">
                         <span id="title">{{title}}</span>
                         <span id="year">{{year}}</span>
-                    </div> 
+                    </div>
                     <div id="more-info">
                         <span>Starring:</span>
                         <span id="starring">{{starring}}</span>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </script>
@@ -38,8 +39,9 @@
                 <img height ="100" width ="100" src ="images/movie.png">
                 <h2>RENT A MOVIE</h2>
                 <div class="search-pane">
-                    <input type="search">
-                    <input type="submit" value="Search">
+                    <input id="field" type="search">
+                    <input id="search_button" type="submit" value="Search">
+                    <div id="suggestions_box" class="suggestions"></div>
                 </div>
             </div>
             <div class="bottom-header">
