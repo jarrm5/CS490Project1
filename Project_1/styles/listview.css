@@ -1,0 +1,45 @@
+.list-movie-container{
+    height:260px;
+    border-bottom: 2px solid lightgray;
+}
+
+.info-container{
+    padding-top:7px;
+    float:left;
+}
+
+.info-container div{
+    margin: 10px 0px;
+}
+
+#list-title{
+    font-size:18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#list-year{
+    font-size: 15px;
+}
+
+#list-starring, #list-rating{
+    font-weight: bold;
+}
+
+#rating img{
+    height:20px;
+    width:20px;
+}
+
+.summary{
+    padding:10px;
+    line-height:1.5;
+    width:700px;
+    background-color: #E0FFFF;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+
+}
+
+
+

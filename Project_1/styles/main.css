@@ -56,6 +56,8 @@ div.top-header div.search-pane input[type=submit]{
     border-left:none;
 }
 
+
+
 /* Lower head */
 
 div.bottom-header{
@@ -77,10 +79,11 @@ div.bottom-header select{
 div.bottom-header div.icons{
     float:right;
     height: 30px;
-    margin: 15px 15px 0 0;
+    margin: 15px 30px 0 0;
 }
 
 div.bottom-header div.icons img{
+    float:right;
     height: 30px;
     width: 30px;
 }

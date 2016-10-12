@@ -1,12 +1,14 @@
-.movie-container{
+.grid-movie-container {
+    margin: 20px;
     position: relative;
+    float: left;
     width: 200px;
     height: 200px;
     border: 2px solid lightgray;
     padding:5px;
 }
         
-.movie-container img{
+.grid-movie-container img{
     height: 200px;
     width: 200px;
 }
@@ -42,6 +44,10 @@
     opacity:1;
 }
 
+#title{
+    text-transform:uppercase;
+}
+
 #more-info{
     height:0px;
     opacity: 0.7;
@@ -53,7 +59,7 @@
 }
 
 
-.movie-container:hover #basic-info{
+.grid-movie-container:hover #basic-info{
     height:50px;
     margin-bottom:60px;
     opacity:0.6;
@@ -61,7 +67,7 @@
     transition: margin-bottom 2s, height 2s, line-height 2s, padding-top 2s, opacity 2s;
 }
 
-.movie-container:hover #more-info{
+.grid-movie-container:hover #more-info{
     height:60px;
     transition: height 2s;
 }

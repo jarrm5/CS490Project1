@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         <link rel="stylesheet" type="text/css" href="styles/gridview.css">
         <link rel="stylesheet" type="text/css" href="styles/search.css">
+        <link rel="stylesheet" type="text/css" href="styles/listview.css">
         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="js_files/movies.js"></script>
@@ -17,7 +18,7 @@
         
         <script id="gridview-template" type="text/html">
             <div id="grid-view">
-                <div class="movie-container">
+                <div class="grid-movie-container">
                     <img src="{{photo}}">
                     <div id="hd"><img src="images/hd.png"></div>
                     <div id="basic-info">
@@ -51,8 +52,8 @@
                     <option value="rt">Rating</option>
                 </select>
                 <div class="icons">
+                    <img src="images/list.jpg">
                     <img src="images/grid.jpg">
-                    <img src="images/list.jpg"> 
                 </div>
             </div>
         </header>

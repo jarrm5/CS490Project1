@@ -9,20 +9,38 @@ and open the template in the editor.
         <title>test dynamic elements</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles/listview.css">
         <link rel="stylesheet" type="text/css" href="styles/gridview.css">
     </head>
     <body>
-        <div id="grid-view">
-            <div class="movie-container">
-                <img src="movies/shrek.jpg">
-                <div id="hd"><img src="images/hd.png"></div>
-                <div id="more-info">
-                    <span id="starring">Starring:</span>
-                    <span>Mike, Cam</span>
-                    <div id="basic-info">
-                        <span id="title">SHREK</span>
-                        <span>(2007)</span>
-                    </div> 
+        <div id="list-view">
+            <div class="list-movie-container">
+                <div class="grid-movie-container">
+                    <img src="movies/blue-Streak.jpg">
+                    <div id="hd"><img src="images/hd.png"></div>
+                </div>
+                <div class="info-container">
+                    <div class="title-bar">
+                        <span id="list-title">Blue Streak</span>
+                        <span id="list-year">(1999)</span>
+                    </div>
+                    <div class="starring-bar">
+                        <span id="list-starring">Starring:</span>
+                        <span id="list-actors">Martin Lawrence, Luke Wilson</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span id="list-rating">Rating:</span>
+                        <span id="rating">
+                            <img src="images/gold_star.png">
+                            <img src="images/gold_star.png">
+                            <img src="images/gold_star.png">
+                            <img src="images/regular_star.png">
+                            <img src="images/regular_star.png">
+                        </span>
+                    </div>
+                    <div class="summary">
+                        Blue Streak is a 1999 American buddy cop comedy film directed by Les Mayfield and starring Martin Lawrence, Luke Wilson, Dave Chappelle, Peter Greene, Nicole Ari Parker and William Forsythe. The film was shot on location in California. The prime shooting spot was Sony Pictures Studios which is located in Culver City, California.
+                    </div>
                 </div>
             </div>
         </div>
