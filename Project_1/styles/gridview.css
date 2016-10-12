@@ -5,7 +5,7 @@
     border: 2px solid lightgray;
     padding:5px;
 }
-            
+        
 .movie-container img{
     height: 200px;
     width: 200px;
@@ -36,14 +36,6 @@
     transition: margin-bottom 2s, height 2s, padding-top 2s;
 }
 
-#basic-info:hover{
-    height:60px;
-    margin-bottom:50px;
-    opacity:0.6;
-    padding-top: 10px;
-    transition: margin-bottom 2s, height 2s, line-height 2s, padding-top 2s, opacity 2s;
-}
-
 #basic-info span, #more-info span{
     display:block;
     color:white;
@@ -51,16 +43,27 @@
 }
 
 #more-info{
-    visibility:hidden;
-    margin-bottom:-40px;
-    overflow:hidden;
+    height:0px;
     opacity: 0.7;
     position:absolute;
     background-color:black;
     bottom:5px;
-    height:40px;
     left:5px;
     width:200px;
+}
+
+
+.movie-container:hover #basic-info{
+    height:50px;
+    margin-bottom:60px;
+    opacity:0.6;
+    padding-top: 10px;
+    transition: margin-bottom 2s, height 2s, line-height 2s, padding-top 2s, opacity 2s;
+}
+
+.movie-container:hover #more-info{
+    height:60px;
+    transition: height 2s;
 }
 
 #more-info span{
