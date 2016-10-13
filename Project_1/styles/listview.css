@@ -12,6 +12,16 @@
     margin: 10px 0px;
 }
 
+.title-bar{
+    position:relative;
+}
+
+#list-year{
+    position:absolute;
+    bottom: 3px;
+    left:135px;
+}
+
 #list-title{
     font-size:18px;
     font-weight: bold;
@@ -25,6 +35,18 @@
 #list-starring, #list-rating{
     font-weight: bold;
 }
+
+.rating-bar{
+    position:relative;
+}
+
+#rating{
+    position:absolute;
+    left:60px;
+    bottom: -5px;
+    margin:0px;
+}
+
 
 #rating img{
     height:20px;
