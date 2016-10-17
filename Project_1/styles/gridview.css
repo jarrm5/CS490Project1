@@ -13,13 +13,13 @@
     width: 200px;
 }
             
-#hd{
+.hd{
     position:absolute;
     top: 15px;
     left: 15px;
 }
 
-#hd img{
+.hd img{
     height: 30px;
     width: 40px;
 }
@@ -44,7 +44,7 @@
     opacity:1;
 }
 
-#title{
+#grid-title{
     text-transform:uppercase;
 }
 

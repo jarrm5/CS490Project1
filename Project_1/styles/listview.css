@@ -19,7 +19,8 @@
 #list-year{
     position:absolute;
     bottom: 3px;
-    left:135px;
+    margin-left:10px;
+    /*left:135px;*/
 }
 
 #list-title{
@@ -32,7 +33,7 @@
     font-size: 15px;
 }
 
-#list-starring, #list-rating{
+#list-starring, .list-rating{
     font-weight: bold;
 }
 
@@ -40,15 +41,15 @@
     position:relative;
 }
 
-#rating{
+.rating-container{
     position:absolute;
     left:60px;
-    bottom: -5px;
+    bottom: -15px;
     margin:0px;
 }
 
 
-#rating img{
+.rating-container img{
     height:20px;
     width:20px;
 }
@@ -60,7 +61,6 @@
     background-color: #E0FFFF;
     border: 2px solid lightgray;
     border-radius: 5px;
-
 }
 
 

@@ -16,13 +16,14 @@ div.suggestions{
     border-width: 1px;
     width:600px;
     overflow:auto;
-    display:none;
+    /*display:none;*/
 }
 
-div.sub_suggestions{
+div.sub-suggestion{
     width:600px;
 }
 
-div.sub_suggestions:hover{
+div.sub-suggestion:hover{
+    cursor:pointer;
     background-color:gainsboro;
 }

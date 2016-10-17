@@ -17,23 +17,52 @@
         <script src="js_files/main.js"></script>
         
         <script id="gridview-template" type="text/html">
-            <div id="grid-view">
-                <div class="grid-movie-container">
-                    <img src="{{photo}}">
-                    <div id="hd"><img src="images/hd.png"></div>
-                    <div id="basic-info">
-                        <span id="title">{{title}}</span>
-                        <span id="year">{{year}}</span>
-                    </div>
-                    <div id="more-info">
-                        <span>Starring:</span>
-                        <span id="starring">{{starring}}</span>
-                    </div> 
+            <div class="grid-movie-container">
+                <img src="{{photo}}">
+                <div class="hd"><img src="images/hd.png"></div>
+                <div id="basic-info">
+                    <span id="grid-title">{{title}}</span>
+                    <span id="grid-year">{{year}}</span>
                 </div>
+                <div id="more-info">
+                    <span>Starring:</span>
+                    <span id="starring">{{starring}}</span>
+                </div> 
             </div>
         </script>
         
+        <script id="listview-template" type="text/html">
+            <div class="list-movie-container">
+                <div class="grid-movie-container">
+                    <img src="{{photo}}">
+                    <div class="hd"><img src="images/hd.png"></div>
+                </div>
+                <div class="info-container">
+                    <div class="title-bar">
+                        <span id="list-title">{{title}}</span>
+                        <span id="list-year">({{year}})</span>
+                    </div>
+                    <div class="starring-bar">
+                        <span id="list-starring">Starring:</span>
+                        <span id="list-actors">{{starring}}</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span class="list-rating">Rating:</span>
+                        <div class="rating-container">
+                            <img src="images/regular_star.png">
+                            <img src="images/regular_star.png">
+                            <img src="images/regular_star.png">
+                            <img src="images/regular_star.png">
+                            <img src="images/regular_star.png">
+                        </div>
+                    </div>
+                    <div class="summary">{{description}}</div>
+                </div>
+            </div>
+        </script>
+         
     </head>
+    
     <body>
         <header>
             <div class="top-header">
@@ -42,25 +71,23 @@
                 <div class="search-pane">
                     <input id="field" type="search">
                     <input id="search_button" type="submit" value="Search">
-                    <div id="suggestions_box" class="suggestions"></div>
+                    <div id="suggestion_box" class="suggestions"></div>
                 </div>
             </div>
             <div class="bottom-header">
                 <h3>Sort By:</h3>
-                <select>
-                    <option value="yr">Year</option>
-                    <option value="rt">Rating</option>
+                <select id="combo-box">
+                    <option value="year">Year</option>
+                    <option value="rating">Rating</option>
                 </select>
                 <div class="icons">
-                    <img src="images/list.jpg">
-                    <img src="images/grid.jpg">
+                    <img id="list-icon" src="images/list.jpg">
+                    <img id="grid-icon" src="images/grid_pressed.jpg">
                 </div>
             </div>
         </header>
         
-        <div id="gridview">
-            
-            
-        </div>
+        <div id="movies" class="gridview"></div>
+        
     </body>
 </html>
