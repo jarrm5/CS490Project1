@@ -47,7 +47,7 @@ function Controller(data){
         self.make_grid_function.call(self);
         self.load_movies(self.grid_template);
         self.hide_hd_function.call(self);
-        $(this.suggestion_box).hide();
+        $(self.suggestion_box).hide();
         self.is_in_gridview = true;
     });
     $(this.list_icon).on("click",function(){
@@ -55,14 +55,14 @@ function Controller(data){
         self.load_movies(self.list_template);
         self.hide_hd_function.call(self);
         self.show_rating_function.call(self);
-        $(this.suggestion_box).hide();
+        $(self.suggestion_box).hide();
         self.is_in_gridview = false;
     });
     $(this.combo_box).on("change",function(){
         self.sort_movies_function.call(self);
         self.hide_hd_function.call(self);
         self.show_rating_function.call(self);
-        $(this.suggestion_box).hide();
+        $(self.suggestion_box).hide();
     });
     
     $(this.search_field).on('keyup',function(){
@@ -151,15 +151,11 @@ Controller.prototype.search = function(){
     }
     
     if(show){
-        $(".sub-suggestion").on('click',function(){
+        $(".sub-suggestion").on("click",function(){
             var item=$(this).html();
             $(self.search_field).val(item);
             $(self.suggestion_box).hide();
-            //$(self.search_field).off("blur");
         });
-        //$(this.search_field).on("blur",function(){
-        //    $(self.suggestion_box).hide();
-        //});
         
         $(this.suggestion_box).show();
     }
@@ -172,7 +168,7 @@ Controller.prototype.search = function(){
         self.load_movies(self.list_template);
         self.hide_hd();
         self.show_rating();
-        $(this.suggestion_box).hide();
+        $(self.suggestion_box).hide();
         //Hide the listview panels initially
         $(self.movies_div).children().hide();
         //Get the movie titles of the suggestions

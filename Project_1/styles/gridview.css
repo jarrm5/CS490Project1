@@ -56,6 +56,7 @@
     bottom:5px;
     left:5px;
     width:200px;
+    transition: height 2s;
 }
 
 
