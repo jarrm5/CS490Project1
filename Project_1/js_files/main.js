@@ -162,11 +162,7 @@ Controller.prototype.search = function(){
             var item=$(this).html();
             $(self.search_field).val(item);
             $(self.suggestion_box).hide();
-            //$(self.search_field).off("blur");
         });
-        //$(this.search_field).on("blur",function(){
-        //    $(self.suggestion_box).hide();
-        //});
         
         $(this.suggestion_box).show();
     }
@@ -180,7 +176,7 @@ Controller.prototype.search = function(){
         do_fade();
         self.hide_hd();
         self.show_rating();
-        $(this.suggestion_box).hide();
+        $(self.suggestion_box).hide();
         //Hide the listview panels initially
         $(self.movies_div).children().hide();
         //Get the movie titles of the suggestions
@@ -193,6 +189,11 @@ Controller.prototype.search = function(){
                 }
             }
         }
+    });
+    
+    //Hide when the search box goes out of focus
+    $(self.search_field).focusout(function(){
+        $(self.suggestion_box).hide();
     });
 };
 Controller.prototype.get_suggestions = function(){
