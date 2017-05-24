@@ -5,10 +5,8 @@
 
 @font-face{
     font-family: Oleo;
-    src: url(fonts/oleo.woff);
+    src: url(../fonts/oleo.woff);
 }
-
-/* HEAD STYLES */
 
 /*Upper head */
 
@@ -40,7 +38,7 @@ div.top-header div.search-pane{
 div.top-header div.search-pane input[type=search]{
     height: 30px;
     line-height:60px;
-    width:60%;
+    width:600px;
     border:1px solid #A6B0B6;
     border-right: none;
     border-radius: 5px 0px 0px 5px;
@@ -48,7 +46,6 @@ div.top-header div.search-pane input[type=search]{
 div.top-header div.search-pane input[type=submit]{
     position:relative; /*Merges the button with the textbox regardless of browser resize*/
     right:7px;
-    
     height: 30px;
     background-color: #3284A1;
     color: #F1F6F8;
@@ -58,7 +55,12 @@ div.top-header div.search-pane input[type=submit]{
     border-left:none;
 }
 
-/* Lower head styles */
+div.top-header div.search-pane input[type=submit]:hover{
+    cursor:pointer;
+}
+
+
+/* Lower head */
 
 div.bottom-header{
     height: 60px;
@@ -79,14 +81,20 @@ div.bottom-header select{
 div.bottom-header div.icons{
     float:right;
     height: 30px;
-    margin: 15px 15px 0 0;
+    margin: 15px 30px 0 0;
+}
+
+div.bottom-header div.icons img{
+    float:right;
+    height: 30px;
+    width: 30px;
 }
 
 div.bottom-header div.icons img:hover{
     cursor:pointer;
 }
 
-div.bottom-header div.icons img{
-    height: 30px;
-    width: 30px;
-}
+
+
+
+
