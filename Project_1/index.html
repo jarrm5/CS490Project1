@@ -4,30 +4,91 @@
         <title>Movie Search System</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/gridview.css">
+        <link rel="stylesheet" type="text/css" href="styles/search.css">
+        <link rel="stylesheet" type="text/css" href="styles/listview.css">
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js_files/movies.js"></script>
+        <script src="js_files/htmlMaker.js"></script>
+        <script src="js_files/main.js"></script>  
+        
+        <script id="gridview-template" type="text/html">
+            <div class="grid-movie-container">
+                <img src="{{photo}}">
+                <div class="hd"><img src="images/HD.png"></div>
+                <div id="basic-info">
+                    <span id="grid-title">{{title}}</span>
+                    <span id="grid-year">{{year}}</span>
+                </div>
+                <div id="more-info">
+                    <span>Starring:</span>
+                    <span id="starring">{{starring}}</span>
+                </div> 
+            </div>
+        </script>
+        
+        <script id="listview-template" type="text/html">
+            <div class="list-movie-container">
+                <div class="grid-movie-container">
+                    <img src="{{photo}}">
+                    <div class="hd"><img src="images/HD.png"></div>
+                </div>
+                <div class="info-container">
+                    <div class="title-bar">
+                        <span id="list-title">{{title}}</span>
+                        <span id="list-year">({{year}})</span>
+                    </div>
+                    <div class="starring-bar">
+                        <span id="list-starring">Starring:</span>
+                        <span id="list-actors">{{starring}}</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span class="list-rating">Rating:</span>
+                        <div class="rating-container">
+                            <img src="images/regular_star.png">
+                            <img src="images/regular_star.png">
+                            <img src="images/regular_star.png">
+                            <img src="images/regular_star.png">
+                            <img src="images/regular_star.png">
+                        </div>
+                    </div>
+                    <div class="summary">{{description}}</div>
+                </div>
+            </div>
+        </script>
+         
     </head>
+    
     <body>
+        
         <header>
             <div class="top-header">
                 <img height ="100" width ="100" src ="images/movie.png">
                 <h2>RENT A MOVIE</h2>
                 <div class="search-pane">
-                    <input type="search" value="Type something..">
-                    <input type="submit" value="Search">
+                    <input id="field" type="search">
+                    <input id="search_button" type="submit" value="Search">
+                    <div id="suggestion_box" class="suggestions"></div>
                 </div>
             </div>
             <div class="bottom-header">
                 <h3>Sort By:</h3>
-                <select>
-                    <option value="yr">Year</option>
-                    <option value="rt">Rating</option>
+                <select id="combo-box">
+                    <option value="year">Year</option>
+                    <option value="rating">Rating</option>
                 </select>
                 <div class="icons">
-                    <img src="images/grid.jpg">
-                    <img src="images/list.jpg"> 
+                    <img id="list-icon" src="images/list.jpg">
+                    <img id="grid-icon" src="images/grid_pressed.jpg">
                 </div>
             </div>
         </header>
+        
+        <div id="movies" class="gridview"></div>
+    
     </body>
 </html>

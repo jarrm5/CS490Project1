@@ -1,0 +1,29 @@
+input.text{
+    color:gray;
+    border-width:1px;
+    border-color: lightgray;
+    border-style: solid;
+    width: 600px;
+}
+
+div.suggestions{
+    position:absolute;
+    top:45px;
+    z-index:50;
+    border-color:lightgray;
+    background-color:white;
+    border-style:solid;
+    border-width: 1px;
+    width:600px;
+    overflow:auto;
+    /*display:none;*/
+}
+
+div.sub-suggestion{
+    width:600px;
+}
+
+div.sub-suggestion:hover{
+    cursor:pointer;
+    background-color:gainsboro;
+}
